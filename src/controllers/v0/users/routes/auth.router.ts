@@ -79,7 +79,7 @@ router.post('/login', async (req: Request, res: Response) => {
   res.status(200).send({auth: true, token: jwt, user: user.short()});
 });
 
-
+  
 router.post('/', async (req: Request, res: Response) => {
   const email = req.body.email;
   const plainTextPassword = req.body.password;
